@@ -1,0 +1,29 @@
+.strech-image-list {
+    background-color: #ffffff69;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.strech-image-item {
+    height: 170px;
+    margin: 2px;
+    flex: 1 1;
+}
+.strech-image-item:hover {
+	 transform: scale(1.5) translate(-10%);
+	 cursor:pointer;
+}
+
+/* хром, сафари */
+.strech-image-list::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.strech-image-list { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.strech-image-list { overflow: -moz-scrollbars-none; }
